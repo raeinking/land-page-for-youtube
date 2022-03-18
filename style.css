@@ -2,6 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    justify-content: space-between;
+    margin:0 5%;
+    position: absolute;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+ul {
+    display: flex;
+    width:80%;
+    justify-content: space-around;
+    max-width:600px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
 }
 
 main {
@@ -12,7 +38,92 @@ main {
     justify-content: center;
     background-color:rgba(238, 241, 252);
 }
+.hmain {
+    text-align: center;
+    margin-top:-10rem;
+}
+img {
+    width: 50px;
+    margin-top:-5rem;
+}
 
-main h1 {
-    
+.pmain {
+    margin: 2rem 0;
+    text-align: center;
+    width: 100%;
+    max-width: 626px;
+    line-height: 20px;
+}
+
+.platform {
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.mac,.windows,.linux {
+    position: relative;
+    margin-top:1rem;
+    width:30%;
+    max-width:300px;
+    height:200px;
+    background-color:white;
+    border-radius:25px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+}
+
+.mac:hover,.windows:hover,.linux:hover {
+    transform:scale(1.1);
+}
+
+.mac p,.windows p,.linux p {
+    font-size: 13px;
+    position:absolute;
+    bottom:25px;
+    color:rgba(0, 0, 0, 0.575);
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    bottom:55px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding:0.6rem 1.4rem;
+    border-radius:5px;
+    cursor: pointer;
+    width:80%;
+    max-width: 200px;
+    transition: all 250ms ease-in-out;
+
+}
+
+button:hover {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color:#e2e7fa;
+    display:flex;
+    justify-content:space-evenly;
+    padding:2rem;
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+footer p {
+    max-width:200px;
+    align-items:center;
+    line-height: 23px;
+}
+
+footer h3 {
+    margin-bottom :10px;
 }
